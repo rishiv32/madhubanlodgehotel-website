@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MADHUBAN LODGE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+        
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>MADHUBAN LODGE</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>ADDRESS</h2>
+                <p>
+                    located at the centre of the city near chaaya crossing. <br>
+                Phone no. - 9936510085 ,9966570252 </p>
+               <a href="location.htm"> <button type = "button" class = "head-btn" >Location</button></a>
+                
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#rooms">rooms</a></li>
+                <li><a href = "#customers">customers</a></li>
+                
+            </ul>
+            <button class = "btn sign-up">sign up</button>
+            <button class = "btn log-in">log in</button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>services</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Indoor kichten</h2>
+                        <p>Limited service, near by restaurant within 50mt, online zomato ,swiggy services in room, daily basis tiffin for long stay.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class="fa fa-video-camera" style="font-size:48px;color:red"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>CCTV CAMERA</h2>
+                        <p>Hotels are the most important part of a city. They are not just structures with numerous rooms, they have a life of their own filled with various experiences of people arriving and leaving daily. In such a scenario, it is very important to guarantee the safety and security of people visiting. And, with so many visitors, it also becomes equally important to ensure the safety of hotel premises. To create the safe and secure atmosphere all around the hotel, it is very necessary to have CCTV cameras installed in the hotel premises. Presence of CCTV cameras not only increases the trust of customers, the recorded footage from them also act as an evidence in case of any unexpected activity.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <p>Housekeeping means performing all the duties towards cleaning, maintaining orderliness, and running a house or a business property. In case of hotels, the housekeeping duties involve maintaining the hotel to the best possible state in terms of cleanliness, and keeping it at highly desirable ambience.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class='fas fa-parking' style='font-size:48px;color:red'></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>FREE PARKING</h2>
+                        <p>Parking can become an extremely profitable part of your hotel's operations. Expanding your valet parking can help you increase your hotel's parking revenue, profit and customer satisfaction, plus improve your operations, without major investment</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class="fa fa-wifi" style="font-size:48px;color:red"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>FREE WIFI</h2>
+                        <p>Free Wi-Fi for hotel guest remains the most desirable in-room amenity according to a Hotels.com Amenities Survey.  Moreover, guests assign free Wi-Fi more important than privacy. Hence, it is clear how hotel guests are assigning more importance to free internet access over anything else.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Book Now">
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>rooms</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img1.jpeg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>A/C ROOM</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Double Bed
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Attached Washroom  
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Room service
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Road side Balcony
+                            </li>
+                        </ul>
+                    
+                        <p class = "rate">
+                            <span>Rs.999 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img2.jpeg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>A/C ROOM</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Double Bed
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Attached Washroom
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Room service
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Road side Balcony
+                            </li>
+                        </ul>
+                       
+                        <p class = "rate">
+                            <span>Rs.999 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img3.jpeg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>NON-A/C</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Double Bed
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Attached Washroom
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Air cooler
+                            </li>
+                        </ul>
+                        
+                        <p class = "rate">
+                            <span>Rs.600 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>We Loved it</h3>
+                        <p>Amazing Place</p>
+                        <img src = "images/vibhor.jpeg" alt = "customer image">
+                        <span>Vibhor Gupta, India</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Comfortable Living</h3>
+                        <p>Cheap and best Place</p>
+                        <img src = "images/cus2.png" alt = "customer image">
+                        <span>kishu kumar ,India</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Nice Place</h3>
+                        <p>A fine place both for bachelor and family close to Barabanki Court</p>
+                        <img src = "images/cus3.jpg" alt = "customer image">
+                        <span>Suraj jaiswal, India</span>
+                    </div>
+                    <!-- end of single customer -->
+                      <!-- single customer -->
+                      <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Amazing Place</h3>
+                        <p>Very Good & comfortable stay with all supportive nature for guests</p>
+                        <img src = "images/cus3.png" alt = "customer image">
+                        <span>Amit Pandey, India</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+<br>    
+        <!-- Sub head -->
+    <section class="features-sub-head bg-light py-3">
+        <div class="container grid">
+            <div>
+     <h1 > ABOUT THIS HOTEL</h1>
+             
+                
+     <pre style="background-color: white;" >
+        
+   Check-in time: 12:00 PM
+   Check-out time: 12:00 PM                                
+<h1> Address And contact information</h1>
+  <i class = "fas fa-map-marker-alt"></i> Near Chhaya Chauraha, Raj Kamal Rd, Barabanki, Uttar Pradesh 225001, India
+     <i class = "fas fa-phone-alt"></i>+91 99365 10085, 9966570252
+</pre>
+<!-- tables -->
+
+
+<section>
+  <h1>Amenities      <i class="fa fa-info-circle" style="font-size:36px"></i>
+  </h1>
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0">
+      <thead>
+        <tr>
+                                                                      <b>/<th style="text-decoration: red;">Popular   amenities  - Parking  FREE</th></b>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0">
+      
+        <tr>
+          <td> <i class="fa fa-cutlery" style="font-size:36px"></i>     Food And Drink        </td>
+          <td> </i> Service</td>
+          
+        </tr>
+        <tr>
+          <td>           &check; Room service</td>
+          <td>&check; Front Desk 24 hrs</td>
+        
+          
+        </tr>
+        <tr>
+          
+                                                <td>                                                                                                                                                                                     &check; Full Service Laundary</td>
+          
+        </tr>
+        <tr>
+          <td><i class="fa fa-child" style="font-size:36px"></i>     Kids</td>
+          
+        </tr>
+        <tr>
+            <td>         &check; Kid-friendly</td>
+            <td>      <i class='fas fa-swimming-pool' style='font-size:36px'></i>   Pools</td>
+          
+        </tr>
+        <tr>
+          
+          
+           <td>                                                                                                                                                                                             ✖ No pool</td>
+          
+        </tr>
+        <tr>
+          <td><i class='fas fa-parking' style='font-size:36px'></i>   Parking and Transport</td>
+      
+    
+        </tr>
+        <tr>
+            <td>            &check;Parking Free </td>
+          <td>       <i class='fas fa-cat' style='font-size:36px'></i>      Pets</td>
+          
+         
+        </tr>
+        <tr>
+          <td>                                                                                                                                                                                                     ✖ No Pets</td>
+          
+          
+          
+        </tr>
+        
+        
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+            </div>
+  
+        </div>
+    </section>
+
+    
+<br> <br><br><br><br><br><br><br>
+
+
+
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>Name :-Vishnu Gupta <br>
+                        Buisness :-Hotel Manager
+                    </p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            Chaaya Crossing,Rajkamal Road,Barabanki
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +91 9936510085S ,9966570252
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            vishnu32gupta@gmail.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
